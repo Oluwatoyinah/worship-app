@@ -1,0 +1,80 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    scale: 0.9;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px); /* Start below the original position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(300px); /* Start below the original position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at the original position */
+  }
+}
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-300px); /* Start below the original position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at the original position */
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px); /* Start below the original position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at the original position */
+  }
+}
+
+.fade-up-text {
+  opacity: 0; /* Initially invisible */
+  animation: fadeUp 1s ease-in-out forwards; /* Apply the fade-up animation */
+}
+
+.fade-down-text {
+  opacity: 0; /* Initially invisible */
+  animation: fadeDown 1s ease-in-out forwards; /* Apply the fade-up animation */
+}
+
+.fade-right-text {
+  opacity: 0; /* Initially invisible */
+  animation: fadeRight 1s ease-in-out forwards; /* Apply the fade-up animation */
+}
+
+.fade-left-text {
+  opacity: 0; /* Initially invisible */
+  animation: fadeLeft 1s ease-in-out forwards; /* Apply the fade-up animation */
+}
+
+.fade-in-text {
+  opacity: 0;
+  scale: 0.9;
+  animation: fadeIn 1s ease-in-out forwards;
+}
