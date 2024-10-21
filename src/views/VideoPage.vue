@@ -19,6 +19,8 @@ export default {
         color: 'red',
         'font-style': 'normal',
         'font-weight': '',
+        'text-shadow': true,
+        'text-shadow-color': 'black',
         'box-height': '200px',
         'background-image': ``,
         'background-size': 'cover',
@@ -66,6 +68,9 @@ export default {
         fontWeight: this.allProperties['font-weight'],
         color: this.allProperties.color,
         fontStyle: this.allProperties['font-style'],
+        textShadow: this.allProperties['text-shadow']
+          ? `2px 2px 4px ${this.allProperties['text-shadow-color']}`
+          : 'none',
       }
     },
     logoStyle() {
@@ -81,6 +86,7 @@ export default {
     this.fetchData()
     this.startCamera()
   },
+
   methods: {
     // fetching the mock JSON DATA
     fetchData() {

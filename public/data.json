@@ -4,6 +4,8 @@
   "font": "Arial",
   "font-weight": "bold",
   "font-style": "normal",
+  "text-shadow": true,
+  "text-shadow-color": "red",
   "background-image": "/src/assets/images/easy-worship1.jpeg",
   "background-size": "cover",
   "background-position": "center",

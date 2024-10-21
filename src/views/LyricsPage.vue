@@ -3,16 +3,18 @@ import Draggable from '@/components/Draggable.vue'
 import { Marquee } from 'vue-fast-marquee'
 
 const text = `<div>
-            <p>In times like these, you need a Savior</p>
-            <p>In times like these, I need an anchor</p>
-            <p>Be very sure, be very sure</p>
-            <p>My anchor holds and grips the solid Rock</p>
-          </div>`
+                <p>In times like these, you need a Savior</p>
+                <p>In times like these, I need an anchor</p>
+                <p>Be very sure, be very sure</p>
+                <p>My anchor holds and grips the solid Rock</p>
+              </div>`
+
 export default {
   components: { Draggable, Marquee },
   data() {
     return {
       text,
+
       // default values
       allProperties: {
         // font and text properties
@@ -23,6 +25,8 @@ export default {
         color: 'red',
         'text-align': 'left',
         'text-animation': 'fade-right',
+        'text-shadow': true,
+        'text-shadow-color': 'black',
 
         // background properties
         'background-image': ``,
@@ -68,6 +72,9 @@ export default {
         color: this.allProperties.color,
         fontStyle: this.allProperties['font-style'],
         fontFamily: this.allProperties.font,
+        textShadow: this.allProperties['text-shadow']
+          ? `2px 2px 4px ${this.allProperties['text-shadow-color']}`
+          : 'none',
       }
     },
     scrollStyle() {

@@ -3,6 +3,8 @@
   "color": "white",
   "font-style": "normal",
   "font-weight": "bold",
+  "text-shadow": true,
+  "text-shadow-color": "red",
   "box-height": "200px",
   "background-image": "/src/assets/images/easy-worship1.jpeg",
   "background-size": "cover",
